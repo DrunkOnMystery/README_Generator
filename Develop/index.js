@@ -36,6 +36,12 @@ return inquirer.prompt([
         name: "credits"
     },
     {
+        type: "list",
+        message: "What is the license you wish to use?",
+        choices: ["MIT", "Apache", "GNU", "ISC"],
+        name: "license"
+    },
+    {
         type: "input",
         message: "What is the year of this license?",
         name: "licenseYear"
@@ -44,11 +50,6 @@ return inquirer.prompt([
         type: "input",
         message: "What is the full name of the person this license is for?",
         name: "licenseName"
-    },
-    {
-        type: "input",
-        message: "Any badges you need to list, do so here:",
-        name: "badges"
     },
     {
         type: "input",
