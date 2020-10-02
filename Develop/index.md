@@ -19,36 +19,37 @@ Description
 
 ## Installation
 
-steps
+Steps
 
 
 ## Usage 
 
-usage
+Usage
 
 
 ## Credits
 
-credits
+Credits
 
 
 ## License
 
-This product is licensed under Apache.
+This product is licensed under MIT.
 
 Copyright (c) 2020 Ben Brumby
 
 
 ## Badges
 
+![Picture of MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Contributing
 
-me
+Ben Brumby
 
 ## Tests
 
-nope
+test
 
 ## Questions
 
