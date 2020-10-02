@@ -1,8 +1,15 @@
+// Set up constants for functions and requires
+
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");
+const util = require("util");
+const generateMarkDown = require("./utils/generateMarkdown");
 
-inquirer.prompt([
+const writeReadMe = util.promisify(fs.writeFile);
+
+//begin function to question user
+function promptUser() {
+return inquirer.prompt([
     {
         type: "input",
         message: "Enter Project Title",
@@ -30,8 +37,13 @@ inquirer.prompt([
     },
     {
         type: "input",
-        message: "List any relevant licensing information",
-        name: "license"
+        message: "What is the year of this license?",
+        name: "licenseYear"
+    },
+    {
+        type: "input",
+        message: "What is the full name of the person this license is for?",
+        name: "licenseName"
     },
     {
         type: "input",
@@ -47,13 +59,34 @@ inquirer.prompt([
         type: "input",
         message: "Do you have any run tests for your project? If so, put them here.",
         name: "runTest"
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email"
+    },
+    {
+        type: "input",
+        message: "What is your username on Github?",
+        name: "github"
     }
-])
+]);
+}
 
-.then(function(answers){
-    console.log(answers);
+//beging asyncronous function 
+async function init() {
 
-    const generatedFile = generateMarkdown(answers);
+    try {
+      const answers = await promptUser();
+  
+      const readMe = generateMarkDown(answers);
+  
+      await writeReadMe("index.md", readMe);
+  //console log notification to make 
+      console.log("Successfully wrote to index.md");
+    } catch(err) {
+      console.log(err);
+    }
+  }
 
-    console.log(generatedFile);
-})
+init();
