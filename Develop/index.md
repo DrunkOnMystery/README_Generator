@@ -1,10 +1,10 @@
 
 
-# Title
+# Sample Project
 
 ## Description 
 
-Description
+It's a Sample Project
 
 ## Table of Contents 
 
@@ -19,37 +19,37 @@ Description
 
 ## Installation
 
-Steps
+I created the steps necessary for a sample project
 
 
 ## Usage 
 
-Usage
+It is fair use for all
 
 
 ## Credits
 
-Credits
+Me
 
 
 ## License
 
-This product is licensed under MIT.
+This product is licensed under ISC.
 
-Copyright (c) 2020 Ben Brumby
+Copyright (c) 2020 Benjamin Brumby
 
 
 ## Badges
 
-![Picture of MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Picture of ISC](https://img.shields.io/badge/license-ISC-blue.svg)
 
 ## Contributing
 
-Ben Brumby
+My wife, my sons, and me
 
 ## Tests
 
-test
+n/a
 
 ## Questions
 

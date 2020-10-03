@@ -37,7 +37,7 @@ return inquirer.prompt([
     },
     {
         type: "list",
-        message: "What is the license you wish to use?",
+        message: "What is the license you wish to use for this project?",
         choices: ["MIT", "Apache", "GNU", "ISC"],
         name: "license"
     },
@@ -83,6 +83,7 @@ async function init() {
       const readMe = generateMarkDown(answers);
   
       await writeReadMe("index.md", readMe);
+
   //console log notification to make 
       console.log("Successfully wrote to index.md");
     } catch(err) {
