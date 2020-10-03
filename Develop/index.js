@@ -82,7 +82,7 @@ async function init() {
   
       const readMe = generateMarkDown(answers);
   
-      await writeReadMe("ReadMe.md", readMe);
+      await writeReadMe("index.md", readMe);
 
   //console log notification to make 
       console.log("Successfully wrote to index.md");
