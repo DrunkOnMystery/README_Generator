@@ -4,7 +4,7 @@
 
 ## Description 
 
-It's a Sample Project
+This is a sample project done to show off how this works.
 
 ## Table of Contents 
 
@@ -19,37 +19,37 @@ It's a Sample Project
 
 ## Installation
 
-I created the steps necessary for a sample project
+Download the applicable files and install them as needed.
 
 
 ## Usage 
 
-It is fair use for all
+This project is fair use, and open to all.
 
 
 ## Credits
 
-Me
+I'd like to credit myself, my instructors, and my family.
 
 
 ## License
 
-This product is licensed under ISC.
+This product is licensed under MIT.
 
 Copyright (c) 2020 Benjamin Brumby
 
 
 ## Badges
 
-![Picture of ISC](https://img.shields.io/badge/license-ISC-blue.svg)
+![Picture of MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Contributing
 
-My wife, my sons, and me
+none
 
 ## Tests
 
-n/a
+no
 
 ## Questions
 

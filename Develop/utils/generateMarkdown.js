@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
 return `
-
 # ${answers.title}
 
 ## Description 
@@ -36,7 +35,7 @@ ${answers.credits}
 
 ## License
 
-This product is licensed under ${answers.license}.
+This product is licensed under the standard ${answers.license} license.
 
 Copyright (c) ${answers.licenseYear} ${answers.licenseName}
 
